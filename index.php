@@ -1,6 +1,6 @@
 <?php
 // Initialize variables for the result message and the input text.
-$checkResult = "<span style='color:red'> Try the magic word 'fred'</span>";
+$checkResult = "<span style='color:red'> Try the magic word 'illia'</span>";
 $myInputText01 = '';
 
 // Check if the form was submitted (i.e., if the request method is POST)
@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // The logic from the Node.js application
     $myCheck = false;
-    if ($myInputText01 === 'fred') {
+    if ($myInputText01 === 'illia') {
         $myCheck = true;
     }
 
@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($myCheck) {
         $checkResult = "<b style='color:green'> Cool! </b>";
     } else {
-        $checkResult = "<span style='color:red'> Try the magic word 'fred'</span>";
+        $checkResult = "<span style='color:red'> Try the magic word 'illia'</span>";
     }
 }
 
